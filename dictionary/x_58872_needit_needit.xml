@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" default="facilities" label="Request Type" max_length="40" name="u_choice_2" type="string">
+            <choice>
+                <element label="Facilities" sequence="0" value="facilities"/>
+                <element label="Facilities 2" sequence="1" value="facilities 2"/>
+                <element label="Facilities 3" sequence="2" value="facilities 3"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="What Needed" max_length="40" name="u_choice_7" type="string">
+            <choice>
+                <element label="Facilities1" sequence="0" value="facilities1"/>
+                <element label="Facilities2" sequence="1" value="facilities2"/>
+                <element label="Facilities3" sequence="2" value="facilities3"/>
+            </choice>
+        </element>
+        <element label="When Needed" max_length="40" name="u_glide_date_time_1" type="glide_date_time"/>
+        <element label="Requested For" max_length="32" name="u_reference_6" reference="sys_user" type="reference"/>
+    </element>
+</database>
